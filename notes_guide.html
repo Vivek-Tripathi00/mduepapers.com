@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MDUExam.com</title>
+
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+  <!-- swiper css link  -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<style>
+  body{
+    background-image:url('https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2W7Qv38iFccWLiXP3N66_2URDCPeRYas3PzNc1qYJCSp8YiQd');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+</style>
+
+<body>
+  <!-- header section starts  -->
+
+  <header class="header">
+    <a href="#" class="logo"> <i class="fas fa-lightbulb"></i> MDUePapers</a>
+
+    <nav class="navbar">
+      <div id="close-navbar" class="fas fa-times"></div>
+      <a href="home.html">home</a>
+      <a href="about.html">about</a>
+      <a href="contact.html">contact</a>
+    </nav>
+
+    <div class="icons">
+      <div id="account-btn" class="fas fa-user"></div>
+      <div id="menu-btn" class="fas fa-bars"></div>
+    </div>
+  </header>
+
+  <!-- account form section starts  -->
+
+  <div class="account-form">
+    <div id="close-form" class="fas fa-times"></div>
+
+    <div class="buttons">
+      <span class="btn active login-btn">login</span>
+      <span class="btn register-btn">register</span>
+    </div>
+
+    <form class="login-form active" action="">
+      <h3>login now</h3>
+      <input type="email" placeholder="enter your email" class="box" />
+      <input type="password" placeholder="enter your password" class="box" />
+      <div class="flex">
+        <input type="checkbox" name="" id="remember-me" />
+        <label for="remember-me">remember me</label>
+        <a href="#">forgot password?</a>
+      </div>
+      <input type="submit" value="login now" class="btn" />
+    </form>
+
+    <form class="register-form" action="">
+      <h3>register now</h3>
+      <input type="email" placeholder="enter your email" class="box" />
+      <input type="password" placeholder="enter your password" class="box" />
+      <input type="password" placeholder="confirm your password" class="box" />
+      <input type="submit" value="register now" class="btn" />
+    </form>
+  </div>
+
+  <!-- account form section ends -->
+  <section class="home">
+    <div class="swiper home-slider">
+      <div class="swiper-wrapper">
+        <section
+          class="swiper-slide slide"
+          style="background: url(images/home-slide-1.jpg) no-repeat"
+        >
+          <div class="content">
+            <h3>Download Your B.Tech Papers Here!</h3>
+            <p>
+              Download Your Previous Question Papers Here For Your University
+              Exams.
+            </p>
+            <a href="#categ" class="btn">get started with QP</a>
+            <!-- <a href="rg.html" class="btn">get started with RG</a> -->
+          </div>
+        </section>
+
+        <section
+          class="swiper-slide slide"
+          style="background: url(images/home-slide-2.jpg) no-repeat"
+        >
+          <div class="content">
+            <h3>Download Your B.Tech Papers Here!</h3>
+            <p>All branch of papers available for download.</p>
+            <a href="#categ" class="btn">get started with QP</a>
+            <!-- <a href="rg.html" class="btn">get started with RG</a> -->
+          </div>
+        </section>
+
+        <section
+          class="swiper-slide slide"
+          style="background: url(images/home-slide-3.jpg) no-repeat"
+        >
+          <div class="content">
+            <h3>Download Your B.Tech Papers Here!</h3>
+            <p>Easily download all previous exam papers here.</p>
+            <a href="#categ" class="btn">get started with QP</a>
+            <!-- <a href="rg.html" class="btn">get started with RG</a> -->
+            <!-- <a href="#categ" class="btn">get started</a>
+            <a href="rg.html" class="btn">get started with RG</a> -->
+          </div>
+        </section>
+      </div>
+
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <!-- header section ends -->
+
+  <section class="heading-link">
+    <h3>Latest Rg of ALL Subjects</h3>
+    <p><a href="home.html">Home</a> / About</p>
+  </section>
+
+  <!-- about section starts  -->
+  <style>
+   
+
+    .container {
+      /* width: 100%; */
+      width: 700px;
+      height: 300px;
+      background-color: rgba(255, 255, 255, 0.332);
+      overflow-y: auto;
+      padding: 10px;
+      box-sizing: border-box;
+      box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+      border-radius: 4px;
+    }
+
+    .item {
+      background-color: #ffffff3d;
+      margin-bottom: 5px;
+      padding: 5px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .item {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffffff4d;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+      border-radius: 4px;
+      max-width: 100%;
+      margin-bottom: 5px;
+      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+      border-radius: 4px;
+    }
+
+    .item h2 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    .download-btn {
+      display: block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1rem;
+      text-align: center;
+      transition: background-color 0.3s;
+      text-decoration: none;
+    }
+
+    .download-btn:hover {
+      background-color: #0056b3;
+    }
+
+    @media screen and (max-width: 600px) {
+      .container {
+        width: 95%;
+        height: 200px;
+      }
+
+      .item h2 {
+        font-size: 1.2rem;
+      }
+
+      .download-btn {
+        font-size: 0.9rem;
+      }
+
+    }
+  </style>
+
+  <section class="about">
+    <div class="image" >
+      <!-- <img src="images /about-img.jpg" alt="" /> -->
+      <div class="container" id="rg-section">
+        <div class="item">
+          <h2>DSA rg (1st year)</h2>
+          <a class="download-btn" href="rgpdf/DSA RG.pdf" name="shivam" >Download PDF</a>
+        </div>
+        <div class="item">
+          <h2>BEE rg (2nd year)</h2>
+          <a class="download-btn" href="rgpdf/BEE RG.pdf" >Download PDF</a>
+        </div>
+        <div class="item">
+          <h2>  Chemistry 1 (1st year)</h2>
+          <a class="download-btn" href="rgpdf/chemistry 1.pdf" name="rg-chemistry" >Download PDF</a>
+        </div>
+        <div class="item">
+          <h2>Dsa using C (3sem)</h2>
+          <a class="download-btn" href="rgpdf/Data structure & Algorithms Sem 3 solved papers .pdf" >Download PDF</a>       
+         </div>
+        <div class="item">
+          <h2>DBMS RG (4 sem)</h2>
+          <a class="download-btn" href="rgpdf/DBMS solved papers - sem 3.pdf" >Download PDF</a>
+        </div>
+        <div class="item">
+          <h2>  Eco for engineers (2st year)</h2>
+          <a class="download-btn" href="rgpdf/economics for engineers.pdf" >Download PDF</a>
+        </div>
+        <div class="item">
+          <h2>  Digital Electronics (1st year)</h2>
+          <a class="download-btn" href="rgpdf/Digital Electronics .pdf" >Download PDF</a>
+        </div>
+        <div class="item">
+          <h2>  pps using c  (1st year)</h2>
+          <a class="download-btn" href="rgpdf/PPS RG.pdf" >Download PDF</a>
+        </div>
+        <div class="item">
+          <h2> Python programing (2st year)</h2>
+          <a class="download-btn" href="rgpdf/python programming sem 3 solved papers .pdf" >Download PDF</a>
+        </div>
+        <div class="item">
+          <h2>  Descrite mathematics (2st year)</h2>
+          <a class="download-btn" href="rgpdf/RG_Discrete mathematics.pdf" >Download PDF</a>
+        </div>
+  
+      </div>
+    </div>
+
+    <div class="content">
+      <h3 class="about-title">
+        Welcome to our website where you can easily download previous year
+        question papers and RG
+      </h3>
+      <p>
+        Our goal is to help students and candidates prepare for their exams by
+        providing them with reliable and authentic previous year question
+        papers and RG. We believe that these papers are an invaluable resource for
+        understanding the exam pattern, the type of questions asked, and the
+        level of difficulty of the exam.
+      </p>
+    </div>
+  </section>
+
+  <!-- about section ends -->
+
+  <!-- teachers section starts  -->
+  <section class="home-courses" id="categ">
+    <h1 class="heading">Features of Our Rg and Process to download</h1>
+
+    <div class="swiper home-courses-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide">
+          <div class="image">
+            <img src="https://img.freepik.com/free-vector/revenue-concept-illustration_114360-2803.jpg?size=626&ext=jpg&ga=GA1.2.752953021.1678452979&semt=sph" alt="" />
+            <h3>Features..</h3>
+          </div>
+          <div class="content">
+            <h3>Features...</h3>
+            <p>
+              Pocket Friendly , 
+              Previous 3 year solved papers and in
+              PDF format
+            </p>
+            <a href="#rg-section" class="btn">click here</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide slide">
+          <div class="image">
+            <img src="https://img.freepik.com/free-vector/features-overview-concept-illustration_114360-1481.jpg?size=626&ext=jpg&ga=GA1.1.752953021.1678452979&semt=ais" alt="" />
+            <h3>Product details..</h3>
+          </div>
+          <div class="content">
+            <h3>Product Detail..</h3>
+            <p>
+              We have the latest RG available, which will assist you in preparing for your exams.
+          Purchase the reuired RG for your exam preparation easily at the last moment.
+          We are providing rg for students at 50% discount.
+            </p>
+            <a href="#rg-section" class="btn">click here</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide slide">
+          <div class="image">
+            <img src="images/process.png" alt="" />
+            <h3>Process to Buy...</h3>
+          </div>
+          <div class="content">
+          
+            <p>
+              <li>
+                Step 1: Select the PDFs you want to download(Note: All the PDFs are password protected).
+              </li>
+              <li>
+                Step 2: Make the payment using the available QR code and take the screenshot of the payment or payment
+                confirmation page(notedown time and date).
+              </li>
+              <li>
+                Step 3: Fill the form given below with the required details and submit.
+              </li>
+              <li>
+                Step 4: Our team will verify the payment done and after that you will rcieve the password of the required
+                pdf on your given mail id.
+              </li>
+            </p>
+            <a href="#" class="btn">click here</a>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </section>
+  <style>
+    li{
+      font-size: 15px;
+      color: white;
+      text-align: start;
+    }
+  </style>
+ 
+
+  <!-- teachers section ends -->
+<center>
+
+  <button id="toggle-button">Generate Qr code</button>
+  <div id="image-container" class="scanner">
+    <img id="image1" src="images/paytm.png" class="qr">
+    <img id="image2" src="images/phonepe.jpg" class="qr">
+  </div>
+</center>
+  <style>
+    #toggle-button {
+      background-color: #4CAF50; /* Green */
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 10px;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+    #toggle-button:hover{
+      background-color:#4caf4f9e ;
+    }
+    
+    #image-container {
+      display: none;
+    }
+    
+    #image-container img {
+      max-width: 100%;
+    }
+    
+    @media (max-width: 600px) {
+      #toggle-button {
+        font-size: 14px;
+
+      }
+    }
+    .scanner .qr {
+      width: 25%;
+      height: 350px;
+      margin: 0 10px;
+    }
+
+    .scanner {
+      width: 100%;
+      height: 410px;
+      display: flex;
+      justify-content: center;
+    }
+
+    @media screen and (max-width: 700px) {
+      .scanner .qr {
+
+        width: 39%;
+        height: 324px;
+      }
+    }
+    
+  </style>
+  <script>const toggleButton = document.getElementById("toggle-button");
+    const imageContainer = document.getElementById("image-container");
+    
+    toggleButton.addEventListener("click", function() {
+      if (imageContainer.style.display === "none") {
+        imageContainer.style.display = "block";
+      } else {
+        imageContainer.style.display = "none";
+      }
+    });
+    </script>
+
+    <div class="contact-form-payement">
+      <div class="container2">
+        <div class="card">
+          <div class="left">
+            <img
+              src="/images/online-payment.jpg">
+          </div>
+          <div class="right">
+            <h2>Payment Details</h2>
+            <div class="contact">
+              <div class="form-container">
+                <form class="form" action="https://formspree.io/f/xdovwnyk" method="POST">
+                  <div class="username">
+                    <input type="text" placeholder="Enter your Name" name="name">
+                  </div>
+                  <div class="useremail">
+                    <input type="email" placeholder="Enter your email" name="email" required>
+                  </div>
+                  <div class="usermessage">
+                    <textarea placeholder="Enter your message" name="message" required></textarea>
+                    <input type="file" name="file" id="">
+                  </div>
+                  <div class="useremail">
+                    <input type="date" name="date" id="" required><input type="time" name="time" id="">
+                  </div>
+  
+                  <div class="usersubmit">
+                    <input type="submit" value="Submit">
+                  </div>
+                </form>
+              </div>
+              <div class="address">
+                <div class="email">
+                  <h4>Contact</h4>
+                  <p>webworkbyus@gmail.com</p>
+                </div>
+                <div class="location">
+                  <h4>Based in</h4>
+                  <p>Gurugram,<br>Haryana</p>
+                </div>
+                <!-- <div class="social">
+                        <span><a href="#"><i class="fab fa-facebook"></i></a></span>
+                        <span><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></span>
+                        <span><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></span>
+                      </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+  
+      .container2 {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: sans-serif;
+      }
+  
+      .card {
+        background-color: #ffffff44;
+        padding: 1rem;
+        border-radius: 5px;
+        border: 1px solid #bbb;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+      }
+  
+      .left {
+        width: 25vw;
+        overflow: hidden;
+        border-radius: 5px;
+      }
+  
+      .left img {
+        width: inherit;
+        object-fit: cover;
+        transform: scale(1.3);
+        margin-top: 58px;
+      }
+  
+      .right .contact {
+        display: flex;
+        gap: 1rem;
+        margin-right: 1rem;
+      }
+  
+      .form,
+      .address {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 0 0;
+      }
+  
+      .form input,
+      textarea {
+        width: 100%;
+        outline: none;
+        background: none;
+        border: none;
+        border-bottom: 2px solid #000;
+        padding: 10px 0;
+        margin: 5px 0;
+      }
+  
+      .usersubmit input {
+        background-color: #f25;
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
+        border: none;
+        width: min-content;
+        padding: 15px;
+        margin-bottom: 0;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+  
+      .usersubmit input:hover {
+        background-color: #f45;
+      }
+  
+      .address {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+  
+      h4 {
+        margin-bottom: 5px;
+      }
+  
+      @media screen and (max-width: 700px) {
+        .card {
+          flex-direction: column;
+        }
+  
+        .left {
+          width: 60vw;
+          height: 40vh;
+        }
+      }
+  
+      @media screen and (max-width: 350px) {
+        .container2 {
+          overflow: hidden;
+        }
+  
+        .left {
+          height: 20vh;
+        }
+  
+        .contact {
+          flex-direction: column;
+        }
+      }
+    </style>
+
+
+  <!-- students reviews section starts  -->
+
+  <section class="reviews">
+    <h1 class="heading">students review about RG</h1>
+
+    <div class="swiper reviews-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide">
+          <p>
+            Best platform to download the exam papers and Rg and learning to top the
+            exams. Thank You to 'The Innovators' team to provide us previous
+            papers.
+          </p>
+          <img src="images/pic-1.png" alt="" />
+          <h3>aryan aggarwal</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+
+        <div class="swiper-slide slide">
+          <p>
+            Best platform to download the exam papers and learning to top the
+            exams. Thank You to 'The Innovators' team to provide us previous
+            papers.
+          </p>
+          <img src="images/pic-2.png" alt="" />
+          <h3>kajal arora</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+
+        <div class="swiper-slide slide">
+          <p>
+            Best platform to download the exam papers and learning to top the
+            exams. Thank You to 'The Innovators' team to provide us previous
+            papers.
+          </p>
+          <img src="images/pic-3.png" alt="" />
+          <h3>amit dubey</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+
+        <div class="swiper-slide slide">
+          <p>
+            Best platform to download the exam papers and learning to top the
+            exams. Thank You to 'The Innovators' team to provide us previous
+            papers.
+          </p>
+          <img src="images/pic-4.png" alt="" />
+          <h3>alina sharma</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+
+        <div class="swiper-slide slide">
+          <p>
+            Best platform to download the exam papers and learning to top the
+            exams. Thank You to 'The Innovators' team to provide us previous
+            papers.
+          </p>
+          <img src="images/pic-5.png" alt="" />
+          <h3>manish kumar</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+
+        <div class="swiper-slide slide">
+          <p>
+            Best platform to download the exam papers and learning to top the
+            exams. Thank You to 'The Innovators' team to provide us previous
+            papers.
+          </p>
+          <img src="images/pic-6.png" alt="" />
+          <h3>priya rao</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- students reviews section ends -->
+
+  <!-- footer section starts  -->
+
+  <section class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3><i class="fas fa-lightbulb"></i>MDUePapers.in</h3>
+        <p>
+          If you want to join and want to know more about us click on the link
+          below. Share your review with us and give your feedback.
+        </p>
+        <div class="share">
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-instagram"></a>
+          <a href="#" class="fab fa-linkedin"></a>
+        </div>
+      </div>
+
+      <div class="box">
+        <h3>quick links</h3>
+        <a href="home.html" class="link">Home</a>
+        <a href="about.html" class="link">About</a>
+        <a href="contact.html" class="link">Contact</a>
+      </div>
+
+      <div class="box">
+        <h3>useful links</h3>
+        <a href="contact.html" class="link">Help center</a>
+        <a href="contact.html" class="link">Ask questions</a>
+        <a href="contact.html" class="link">Send feedback</a>
+        <a href="#" class="link" id="terms-link">Terms of use</a>
+        <div id="terms-section">Our Terms and Services outline the rules and regulations for the use of our website. By accessing or using our website, you agree to be bound by these terms. You must use our website for lawful purposes only and not attempt to gain unauthorized access. All content on the website is protected by copyright and intellectual property laws, and you may not reproduce or modify any content without our prior written consent. The website is provided "as is" without any warranties, and we reserve the right to modify or discontinue the website at any time. By using our website, you agree to our Privacy Policy as well.</div>
+      </div>
+      <style>#terms-section {
+        display: none;
+      }
+      
+      @media only screen and (max-width: 768px) {
+        #terms-link {
+          display: block;
+          margin-top: 10px;
+        }
+        #terms-section {
+          display: none;
+          margin-top: 10px;
+        }
+        #terms-link.active + #terms-section {
+          display: block;
+        }
+      }
+      </style>
+      <script>
+        const termsLink = document.getElementById('terms-link');
+      const termsSection = document.getElementById('terms-section');
+      
+      termsLink.addEventListener('click', (event) => {
+        event.preventDefault();
+        if (termsSection.style.display === 'none') {
+          termsSection.style.display = 'block';
+          termsLink.classList.add('active');
+        } else {
+          termsSection.style.display = 'none';
+          termsLink.classList.remove('active');
+        }
+      });
+      
+      </script>
+
+    <div class="credit">
+      created by <span>the innovators</span> |@2023 all rights reserved!
+    </div>
+  </section>
+
+  <!-- footer section ends -->
+
+  <!-- swiper js link  -->
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+  <!-- custom js file link  -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
